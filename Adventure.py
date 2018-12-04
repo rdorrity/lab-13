@@ -1,9 +1,10 @@
 # Team SCSI Logic
-# Sara Kazemi, Cody Young, Nathan Warren-Acord, Ryan Dorrity
-# Lab 14
-# 11/26/2018
+# Sara Kazemi, Ryan Dorrity
+# Lab 13
+# 12/3/2018
 # ###########################################################
 
+# TESTED IN PYTHON 3.7
 # Welcome to Stargate: SCSI-1! A Text Based Adventure
 
 # To win, go to the north room and take the key
@@ -60,10 +61,10 @@
 #
 
 import re
-# from tkinter import *
+
 import tkinter as tk
 from tkinter import messagebox, simpledialog, ttk
-# import threading
+
 
 root = tk.Tk()
 window = tk.Canvas(root, width=100, height=100)
@@ -400,24 +401,28 @@ def print_directions():
     Exit game: quit/exit\n\n\
 To access this help menu at any time, type \"help\".\n""", parent=window)
 
+# popup window to request user name
 def user_name():
     name = simpledialog.askstring("NAME", "Greetings, adventurer. What is your name?",
                                     parent=window)
 
     return name
 
+# requests user name
 def get_user_name():
     name = None
     while (name is None):
         name = user_name()
     return name
 
+# prompts user for movement
 def run_game():
     while True:
         #Prompt user for movement
         user_input(input(">>>", ))
         # Go to room and allow commands
 
+# exits game
 def game_exit():
     print("\nGame over. Thanks for playing!")
     raise SystemExit
