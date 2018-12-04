@@ -9,10 +9,10 @@ prompts_file = open('prompt.txt', 'r').read()
 def get_word_list(words_to_replace):
     words = []
     psn = 0
-    for word in words_to_replace:
+    for char in words_to_replace:
 
-        if word == "\n":
-            found_psn = words_to_replace.find(word, psn)
+        if char == "\n":
+            found_psn = words_to_replace.find(char, psn)
             added = words_to_replace[psn:found_psn]
             words.append(added)
             psn = found_psn + 1
