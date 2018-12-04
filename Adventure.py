@@ -1,9 +1,10 @@
 # Team SCSI Logic
-# Sara Kazemi, Cody Young, Nathan Warren-Acord, Ryan Dorrity
-# Lab 14
-# 11/26/2018
+# Sara Kazemi, Ryan Dorrity
+# Lab 13
+# 12/3/2018
 # ###########################################################
 
+# TESTED IN PYTHON 3.7
 # Welcome to Stargate: SCSI-1! A Text Based Adventure
 
 # To win, go to the north room and take the key
