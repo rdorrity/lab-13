@@ -1,6 +1,7 @@
 # Sara Kazemi and Ryan Dorrity
 # CST 205
 # Lab 13 - Madlibs
+# WRITTEN AND TESTED IN PYTHON 3.7
 # Modifies a short news story with user input madlibs style
 # and prints the modified story to the terminal
 
